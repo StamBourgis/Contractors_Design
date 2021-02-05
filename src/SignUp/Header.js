@@ -56,12 +56,21 @@ const SignUpHeader = () => {
             <Hidden mdDown>
               <Grid container justify="flex-end">
                 <Button variant="contained" color="secondary">
-                  Join for Free
+                  Join Button
                 </Button>
               </Grid>
             </Hidden>
-            <Hidden mdUp>
-              <MenuIcon></MenuIcon>
+            <Hidden lgUp>
+              <Grid container justify="flex-end" spacing={3}>
+                <Hidden smDown>
+                  <Grid item>
+                    <Button>Join Button</Button>
+                  </Grid>
+                </Hidden>
+                <Grid item>
+                  <MenuIcon></MenuIcon>
+                </Grid>
+              </Grid>
             </Hidden>
           </Grid>
         </Grid>
