@@ -3,6 +3,7 @@ import { Grid } from "@material-ui/core";
 import { Paper } from "@material-ui/core";
 
 import SignUpHeader from "./Header";
+import MainContentCard from './MainContent/MainContentCard'
 
 const SignupMain = () => {
   return (
@@ -11,7 +12,7 @@ const SignupMain = () => {
         <SignUpHeader />
       </Grid>
       <Grid item xs={12}>
-        <Paper> SignuP Main Content </Paper>
+        <MainContentCard/>
       </Grid>
       <Grid>
         <Paper> SignuP Footer</Paper>

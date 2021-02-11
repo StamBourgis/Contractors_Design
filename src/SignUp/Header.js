@@ -10,6 +10,7 @@ import Button from "@material-ui/core/Button";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 import LgHeaderButtons from "./lgUp/lgUpHeaderButtons";
+import JoinButton from "./JoinButton";
 
 const SignUpHeader = () => {
   return (
@@ -55,17 +56,13 @@ const SignUpHeader = () => {
           <Grid item xs={3}>
             <Hidden mdDown>
               <Grid container justify="flex-end">
-                <Button variant="contained" color="secondary">
-                  Join Button
-                </Button>
+                <JoinButton />
               </Grid>
             </Hidden>
             <Hidden lgUp>
               <Grid container justify="flex-end" spacing={3}>
                 <Hidden smDown>
-                  <Grid item>
-                    <Button>Join Button</Button>
-                  </Grid>
+                  <JoinButton />
                 </Hidden>
                 <Grid item>
                   <MenuIcon></MenuIcon>
